@@ -1,0 +1,15 @@
+/* header conatiner */
+.header_container{
+    display: flex;
+    padding: 5px 20px;
+    background-color: #fff;
+}
+
+
+
+
+/* logo css */
+.logo{
+    width: 512px;
+    height: 512px;
+}
