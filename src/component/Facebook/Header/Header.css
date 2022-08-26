@@ -1,15 +1,133 @@
 /* header conatiner */
-.header_container{
+.header_container {
     display: flex;
     padding: 5px 20px;
     background-color: #fff;
+    position: sticky;
+    z-index: 99;
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px #ccc;
+}
+
+/* header left css */
+.header_left {
+    display: flex;
+    align-items: center;
+
 }
 
 
+/* header left img css  */
+.header_left img {
+    height: 40px;
+}
+
+/* header search css */
+.header_search {
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 0px 20px;
+    margin-left: 10px;
+    height: 40px;
+
+}
+
+/* header search input css */
+.header_search input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    min-width: 200px;
+
+}
+
+/* header middle css */
+.header_middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* header option css */
+.header_option {
+    padding: 5px 40px;
+    cursor: pointer;
+}
+
+/* header option hover css */
+.header_option:hover {
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+/* header option svg css */
+.header_option svg {
+    color: gray;
+}
+
+/* header option svg hover css */
+.header_option svg:hover {
+    color: #2381fa;
+}
+
+/* header option position css */
+.header_option {
+    position: relative;
+}
+
+/* header option svg hover css */
+.header_option--active svg {
+    color: #2381fa;
+}
+
+/* header option active underline css */
+.header_option--active:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    right: 0;
+    left: 0;
+    bottom: -1px;
+    background-color: #2381fa;
+
+}
 
 
-/* logo css */
-.logo{
-    width: 512px;
-    height: 512px;
+/* header right css */
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+/* header info css */
+.header_info {
+    display: flex;
+    align-items: center;
+}
+
+/* header info h5 css */
+.header_info h5 {
+    margin-right: 20px;
+
+}
+
+/* header info avatar css */
+.header_info .MuiAvatar-root {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+
+}
+
+/* header right icon css */
+.header_right .MuiButtonBase-root {
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    background-color: whitesmoke;
+    color: #000;
+
 }

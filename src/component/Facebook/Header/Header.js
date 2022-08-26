@@ -24,7 +24,7 @@ const Header = () => {
                 </div>
             </div>
             <div className='header_middle'>
-                <div className='header_option'>
+                <div className='header_option header_option--active'>
                     <HomeIcon fontSize='large'/>
                 </div>
                 <div className='header_option'>
@@ -39,7 +39,7 @@ const Header = () => {
             </div>
             <div className='header_right'>
                 <div className='header_info'>
-                <Avatar/>
+                <Avatar src="https://scontent.fcgp28-1.fna.fbcdn.net/v/t39.30808-6/247713450_1648534228826443_1940653593669913980_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHuLhZSvZrL_9zVNok-66XAcl2tNtNJEzVyXa0200kTNSFjhNOWUMrBeumTTeeJs52bz0W3AhHydFaKBfSkuQdo&_nc_ohc=MdklGaLlBmEAX_oHg8X&_nc_ht=scontent.fcgp28-1.fna&oh=00_AT82cyMlpoycOG_knnROWVsqR5sR322czY5nZd-qx-TZDQ&oe=630DFB11"/>
                 <h4>sazid</h4>
                 </div>
                 <IconButton>
