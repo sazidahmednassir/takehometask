@@ -1,8 +1,48 @@
-/* right bar css */
-.rightBar {
+/* widget css */
+.widget {
     margin-top: 30px;
     margin-right: 10px;
     height: 100vh;
     position: sticky;
     top: 0;
+    flex: 0.33;
+}
+
+/* widget_header css */
+.widget_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* widget_bodyOption css */
+.widget_bodyOption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* widget_bodyOption h4 css */
+.widget_bodyOption h4 {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* mgleft css */
+.mgleft {
+    margin-left: 10px;
+}
+
+/* mgleft p css */
+.mgleft p {
+    font-size: 16px;
+    color: gray;
+    margin-right: 10px;
+}
+
+/* widget_header_right css */
+.widget_header_right svg {
+    margin: 0px 10px;
 }

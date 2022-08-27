@@ -25,6 +25,11 @@ const StoryReels = () => {
                 <h4> Sazid</h4>
 
             </div>
+            <div className='story' style={{backgroundImage: `url('https://i.pinimg.com/550x/b2/d4/76/b2d4768987904feac06842964f7ea600.jpg')`}}>
+                <Avatar/>
+                <h4> Sazid</h4>
+
+            </div>
             
            
         </div>
