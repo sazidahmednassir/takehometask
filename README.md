@@ -11,7 +11,11 @@
 
 Desktop_Version:
 
-<img src="https://i.ibb.co/3mMpXdt/Screenshot-26.png" width="128"/>
+<img src="https://i.ibb.co/3mMpXdt/Screenshot-26.png" />
+
+Mobile_Version:
+
+<img src="https://i.ibb.co/26hz4HB/Screenshot-35.png" />
 
 
 
