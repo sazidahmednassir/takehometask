@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
 import React from 'react';
-import Facebook from '../Facebook/Facebook';
-import Instagram from '../Instagram/Instagram';
+import './Home.css'
 
 const Home = () => {
     return (
-        <>
+        <div className="main">
         {/* <Facebook/> */}
-        <Instagram/>
-        </>
+        <Link to="/facebook"><span>Facebook</span>  </Link>
+        <Link to="/instagram"><span>Instagram</span> </Link>
+       
+        </div>
     );
 };
 
