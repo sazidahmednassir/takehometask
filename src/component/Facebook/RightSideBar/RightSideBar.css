@@ -46,3 +46,10 @@
 .widget_header_right svg {
     margin: 0px 10px;
 }
+
+/* media query */
+@media (max-width: 768px) {
+    .widget {
+        display: none;
+    }
+}

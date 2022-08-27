@@ -66,3 +66,34 @@
 .post_bootmOption p {
     margin-left: 5px;
 }
+
+.commented-section {
+    margin-top: 20px;
+}
+
+.commented-user {
+    display: flex;
+    align-items: center;
+
+}
+
+.user {
+    margin-right: 20px;
+}
+
+.reply {
+    display: flex;
+    align-items: center;
+
+}
+
+.reply h6 {
+    margin-left: 10px;
+
+}
+
+.like_secton {
+    display: flex;
+    align-items: baseline;
+
+}

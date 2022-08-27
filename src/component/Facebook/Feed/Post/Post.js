@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Post.css'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import PublicIcon from '@mui/icons-material/Public';
@@ -6,15 +6,51 @@ import { Avatar } from '@mui/material';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ShareIcon from '@mui/icons-material/Share';
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 const Post = () => {
+    const [user, setUser]=useState()
+
+    useEffect(()=>{
+        fetch('facebook.json')
+        .then(res=>res.json())
+        .then(data=>{
+            setUser(data)
+           
+        })
+    },[])
+    let commentDate='';
+    let comments=[];
+    user?.posts.map(pos=> (comments.push(pos.comments)))
+    let convertDate='';
+    let dateto='';
+    user?.posts.map(pos=> (dateto=pos?.posted_on))
+    
+     
+   var convert = new Date(parseInt(dateto))
+   
+
+     convertDate=convert.toLocaleTimeString();
+     console.log(convertDate)
+     console.log(comments)
+     comments[0].map(co=> (commentDate=co.created_at))
+     console.log(commentDate)
+     
+   var convertcomeentdate = new Date(parseInt(commentDate))
+   
+
+   commentDate=convertcomeentdate.toLocaleTimeString();
+    
     return (
         <div className='post'>
             <div className='post_top'>
                 <div className='post_top_left'>
                     <Avatar/>
                     <div className='post_info'>
-                        <h4>Sazid</h4>
-                        <p>12:45p.m <PublicIcon/></p>
+                    {
+                    user?.posts.map(us=><h4>{us?.user?.name}</h4>)
+                }
+                        
+                        <p>{convertDate}<PublicIcon/></p>
                     </div>
                 </div>
                 <MoreHorizIcon/> 
@@ -39,6 +75,27 @@ const Post = () => {
                 </div>
                 
             </div>
+            
+
+            {
+                comments[0].map(co=>  <div  class="commented-section ">
+                <div class=" commented-user">
+                    <h5 class="user">Corey oates</h5><span class="dot mb-1"></span><span >{commentDate}</span></div>
+                <div class="comment-text"><span>{co.text}</span></div>
+                <div
+                    class="reply-section">
+                    <div class="reply">
+                        <div class="like_secton">
+                        <span><ThumbUpOffAltIcon/>10 </span> 
+                        </div>
+                       
+                        <h6 class="ml-2 mt-1">Reply</h6>
+                    </div>
+        </div>
+        </div>)
+            }
+                  
+                
         </div>
     );
 };

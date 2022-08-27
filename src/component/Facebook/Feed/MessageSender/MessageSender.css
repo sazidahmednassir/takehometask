@@ -64,3 +64,21 @@
 .messangeroption p {
     margin-left: 10px;
 }
+
+/* media query */
+@media (max-width: 768px) {
+    .messangeroption {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .messangeroption {
+        display: flex;
+        align-items: center;
+        padding: 5px 16px;
+        border-radius: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}

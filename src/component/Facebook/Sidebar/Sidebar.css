@@ -5,3 +5,12 @@
     position: sticky;
     top: 0;
 }
+
+
+/* media query */
+/* for tablet */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
