@@ -10,7 +10,8 @@
 ## Facebook_Home
 
 Desktop_Version:
-Screenshot (26).png
+
+<img src="https://i.ibb.co/3mMpXdt/Screenshot-26.png" width="128"/>
 
 
 
