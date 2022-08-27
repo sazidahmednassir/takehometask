@@ -32,7 +32,7 @@ const Post = () => {
      convertDate=convert.toLocaleTimeString();
      console.log(convertDate)
      console.log(comments)
-     comments[0].map(co=> (commentDate=co.created_at))
+     comments[0]?.map(co=> (commentDate=co?.created_at))
      console.log(commentDate)
      
    var convertcomeentdate = new Date(parseInt(commentDate))
@@ -78,10 +78,10 @@ const Post = () => {
             
 
             {
-                comments[0].map(co=>  <div  class="commented-section ">
+                comments[0]?.map(co=>  <div  class="commented-section ">
                 <div class=" commented-user">
                     <h5 class="user">Corey oates</h5><span class="dot mb-1"></span><span >{commentDate}</span></div>
-                <div class="comment-text"><span>{co.text}</span></div>
+                <div class="comment-text"><span>{co?.text}</span></div>
                 <div
                     class="reply-section">
                     <div class="reply">

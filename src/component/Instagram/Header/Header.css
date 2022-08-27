@@ -1,0 +1,18 @@
+.header {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.instaImg {
+    object-fit: contain;
+    height: 120px;
+    width: 140px;
+    margin: 0;
+}
